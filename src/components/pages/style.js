@@ -1,14 +1,243 @@
 import styled from "styled-components"
-import props from "./assets/lhoto.jpg"
-
+    import props from "./assets/lhoto.jpg"
+    import props2 from './assets/Rectangle10.jpg'
 
 
 export const Container = styled.div`
 display: flex;
 flex-direction: column;
+
+
+container6{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    height: 250px;
+}
+container601{
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction:column;
+
+   
+}
+container601 p{
+    margin-top: 20px;
+    width: 241px;
+    height: 46px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 23px;
+    color: #030F4B;
+
+}
+
+
+container602{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    flex: 3;
+    
+}
+educartion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+educartion h4{
+width: 71px;
+    height: 22px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #808396;
+    margin-left:20px;
+
+}
+
+container603{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    flex: 2;
+    
+}
+credisshool{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+   
+}
+credisshool h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    color: #030F4B;
+    margin-left: 20px;
+    margin-right: 34px;
+}
+designed p{
+  margin-left:-80px;
+    font-size: 11px;
+font-family: Inter;
+font-style: normal;
+font-weight: 500;
+line-height: 23px;
+}
+red{
+    color:red;
+}
+
+
+
+container5{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    padding-left:-20px;
+    height: 700px;
+    background-image: url(${props2});
+}
+interested{
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 1200px;
+    height: 180px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.05), 0px 10px 15px 4px rgba(0, 0, 0, 0.10);
+    background: #FCFCFF;
+}
+interesh1{
+    width: 513px;
+    height: 39px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 39px;
+    color: #030F4B;
+    margin-right:40px;
+}
+container4{
+    display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width:100%;
+                margin-top: 150px;
+                margin-bottom: 230px;
+}
+web501{
+    width: 873px;
+    height: 154px;    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    color: #030F4B; 
+}
+time{
+    display: flex;
+}
+zones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 378px;
+    height: 168px;
+    background: #FD4455;
+    box-shadow: 0px 10px 35px -3px rgba(253, 68, 85, 0.35), 0px 4px 6px rgba(253, 68, 85, 0.25);
+    border-radius: 8px;
+    margin-left: 100px;
+}
+zones2{
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    
+}
+            container3{
+                  display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width:100%;
+}
+explore{
+    width: 785px;
+    height: 77px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 77px;
+    color: #030F4B;
+    margin-top:30px;
+}
+web4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 90px;
+}
+web40{
+    display: flex;
+    justify-content: center;
+    /* align-items: start; */
+    flex-direction: column;
+    /* margin-left:${props => props.computer ? "180px" : " 0px"}; */
+   /* margin-right: 40px; */
+}
+web401{
+    height: 58px;   
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+    color: #030F4B;
+}
+web4011{
+    margin-top: 40px;
+    height: 114px;
+    width: 526px;
+    /* width:${props => props.students ? "700px" : "542px"}; */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    color: #4A4E63;
+    margin-bottom:70px;
+}
+
             container2{
                 height: 460px;
-                border: 1px solid black;
+                /* border: 1px solid black; */
                 width:100%; 
                 display: flex;
                 justify-content: space-evenly;
@@ -132,7 +361,8 @@ h402{
     font-weight: 700;
     font-size: 21px;
     line-height: 29px;
-    color: #91A7FF;
+    color:${props => props.time ? "#FCEDEF" : "#91A7FF"}
+    /* color: #91A7FF; */
 }
 web012{
     flex: 1;
@@ -252,6 +482,9 @@ h401{
 export const Photo = styled.img`
 
 `
+export const Photo0 = styled.img`
+
+`
 export const Photo1 = styled.img`
 width: 815px;
 height: 31px;
@@ -279,7 +512,47 @@ export const Restangle3 = styled.img`
     border-radius: 4px;
     box-shadow: 0px 10px 35px -3px rgba(51, 93, 255, 0.35), 0px 4px 6px rgba(51, 93, 255, 0.25);
 `
+export const Restangle4 = styled.img`
+margin-right: 120px;
+width: 450px;
+ box-shadow: 0px 10px 35px -3px rgba(51, 93, 255, 0.35), 0px 4px 6px rgba(51, 93, 255, 0.25);
+    border-radius: 13px;
+`
+export const Restangle5 = styled.img`
+margin-left: 120px;
+width: 450px;
+ box-shadow: 0px 10px 35px -3px rgba(51, 93, 255, 0.35), 0px 4px 6px rgba(51, 93, 255, 0.25);
+    border-radius: 13px;
+`
+export const Restangle6 = styled.img`
+margin-right: 120px;
+width: 450px;
+ box-shadow: 0px 10px 35px -3px rgba(51, 93, 255, 0.35), 0px 4px 6px rgba(51, 93, 255, 0.25);
+    border-radius: 13px;
+`
+export const Restangle7 = styled.img`
+
+`
+export const Restangle8 = styled.img`
+
+`
+export const Restangle9 = styled.img`
+margin-left: 40px;
+`
+export const Restangle11 = styled.img`
+
+`
+export const Restangle12 = styled.img`
+margin-left: 20px;
+
+`
+export const Restangle13 = styled.img`
+margin-left: 20px;
+
+`
 export const Button0 = styled.button`
+ box-shadow: 0px 10px 35px -3px rgba(51, 93, 255, 0.35), 0px 4px 6px rgba(51, 93, 255, 0.25);
+    border-radius: 13px;
    display: flex;
     flex-direction: row;
     align-items: center;
