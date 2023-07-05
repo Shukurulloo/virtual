@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Photo, Photo1, Restangle, Restangle2,  Restangle3, Restangle4, Restangle5, Restangle6, Restangle7, Restangle8, Restangle9, Restangle11, Restangle12, Restangle13} from './style'
-import { Navbar, Container01, Web, Home, Wrap, Wrap2, Smile, Smile2, Web2} from "./style"
+import { Navbar, Container01, Web, Home, Wrap, Wrap2, Smile, Smile2, Web2, Container2, Web3, Time} from "./style"
 import { Button0} from "./style"
 import photo from './assets/Logo.jpg'
 import img001 from './assets/Logo.jpg'
@@ -71,23 +71,23 @@ const Container1 = () => {
               </Web2>
               </Container01>
 
-              <container2>
-                <web3 secure>
+              <Container2>
+                <Web3 secure>
                   <Restangle src={restangle1} />
                   <web30>24/7 Support</web30>
                   <web31>Always online to help you</web31>
-                </web3>
-                 <web3 secure>
+                </Web3>
+                 <Web3 secure>
                    <Restangle2 src={restangle2} />
                    <web30>Secure Payments</web30>
                    <web31>Pay your semesters fast & secure</web31>
-                </web3>
-                 <web3 support>
+                </Web3>
+                 <Web3 support>
                  <Restangle3 src={restangle3} />
                   <web30>Online Lectures</web30>
                   <web31>Study in real time, review later</web31>
-                </web3>
-              </container2>
+                </Web3>
+              </Container2>
 
               <container3>
                   <explore>Explore the departments</explore>
@@ -124,24 +124,24 @@ const Container1 = () => {
             has enrolled this year</web501>
                 <Restangle7 src={restangle7} />
 
-               <time> 
-                <smile>
+               <Time> 
+                <Smile>
               <Restangle8 src={restangle8}/>
-              <smile2>
-                <h402>Students </h402>
-                <h1002>150.000+</h1002>
-              </smile2>
+              <Smile2>
+              <h4>Students </h4>
+              <h1>150.000+</h1>
+              </Smile2>
+            </Smile >
+
+            <Smile zones>
+            <Restangle9 src={restangle9}/>
+              <Smile2>
+              <h4 time>Time Zones </h4>
+              <h1>10+</h1>
+              </Smile2>
              
-            </smile>
-            <zones>
-              <Restangle9 src={restangle9}/>
-              <zones2>
-                <h402 time>Time Zones </h402>
-                <h1002>10+</h1002>  
-              </zones2>
-             
-            </zones>
-            </time>
+            </Smile>
+            </Time>
           
               </container4>
               <container5>

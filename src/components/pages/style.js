@@ -158,29 +158,6 @@ web501{
     text-align: center;
     color: #030F4B; 
 }
-time{
-    display: flex;
-}
-zones{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: 378px;
-    height: 168px;
-    background: #FD4455;
-    box-shadow: 0px 10px 35px -3px rgba(253, 68, 85, 0.35), 0px 4px 6px rgba(253, 68, 85, 0.25);
-    border-radius: 8px;
-    margin-left: 100px;
-}
-zones2{
-    margin-left: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    flex-direction: column;
-    
-}
             container3{
                   display: flex;
                 justify-content: center;
@@ -236,26 +213,7 @@ web4011{
     color: #4A4E63;
     margin-bottom:70px;
 }
-
-            container2{
-                height: 460px;
-                /* border: 1px solid black; */
-                width:100%; 
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                flex-direction: row;
-                /* height: 580px; */
-            }
-            web3{
-                margin-top:80px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                margin-right:${props => props.secure || props.support ? "-200px" : "-100px"};
-                margin-left:-100px;
-            }
+          
             web30:hover{
                 font-style: oblique;
                 cursor: pointer;
@@ -485,18 +443,23 @@ margin-bottom: 20px;
 /* border: 1px solid black; */
 margin-bottom:  50px;
 `
+export const Time = styled.div`
+    display: flex;
+`
 export const Smile = styled.div`
 /* border: 1px solid black; */
 display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    width: 425px;
     height: 168px;
-    background: #335DFF;
-    box-shadow: 0px 10px 35px -3px rgba(51, 93, 255, 0.35), 0px 4px 6px rgba(51, 93, 255, 0.25);
+    /* width: 378px; */
+    width:${props => props.zones ? "378px" : "425px"};
+    background:${props => {return props.zones ? "#FD4455" : "#335DFF"}};
+    box-shadow: ${props => props.zones ? "0px 10px 35px -3px rgba(253, 68, 85, 0.35), 0px 4px 6px rgba(253, 68, 85, 0.25)" : "box-shadow: 0px 10px 35px -3px rgba(51, 93, 255, 0.35), 0px 4px 6px rgba(51, 93, 255, 0.25)"};
     border-radius: 8px;
     margin-right: 100px;
+    margin-left:${props => props.zones ? "130px" :"50px"}
 `
 export const Smile2 = styled.div`
     margin-left: 30px;
@@ -504,18 +467,8 @@ export const Smile2 = styled.div`
     justify-content: center;
     align-items: start;
     flex-direction: column;
-h4{
-    width: 237px;
-    height: 29px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 29px;
-    color:${props => props.time ? "#FCEDEF" : "#91A7FF"}
-    /* color: #91A7FF; */
-}
 h1{
+
     width: 259px;
     height: 48px;
     font-family: 'Inter';
@@ -524,7 +477,21 @@ h1{
     font-size: 38px;
     line-height: 48px;
     color: #FCFCFF;
+    margin-top:-30px;
 }
+h4{
+    width: 237px;
+    height: 29px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 29px;
+    color:${props => props.time ? "#91A7FF" : "#FCEDEF"};#91A7FF
+    /* color: #91A7FF; */
+    margin-top:30px;;
+}
+
 `
 export const Web2 = styled.div`
     display:flex;
@@ -532,4 +499,23 @@ export const Web2 = styled.div`
     margin-left:857px;
     margin-top: -21px;
     /* border: 1px solid black; */
+`
+export const Container2 = styled.div`
+                height: 460px;
+                /* border: 1px solid black; */
+                width:100%; 
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: row;
+                /* height: 580px; */
+`
+export const Web3 = styled.div`
+                margin-top:80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-right:${props => props.secure || props.support ? "-200px" : "-100px"};
+                margin-left:-100px;
 `
