@@ -1,8 +1,8 @@
 import React from 'react'
-import { Container, Photo,Photo0, Photo1, Photo2, Restangle, Restangle2,  Restangle3, Restangle4, Restangle5, Restangle6, Restangle7, Restangle8, Restangle9, Restangle11, Restangle12, Restangle13} from './style'
-import { Navbar} from "./style"
-import { Button0 } from "./style"
-import img01 from './assets/Logo.jpg'
+import { Container, Photo, Photo1, Restangle, Restangle2,  Restangle3, Restangle4, Restangle5, Restangle6, Restangle7, Restangle8, Restangle9, Restangle11, Restangle12, Restangle13} from './style'
+import { Navbar, Container01, Web, Home, Wrap, Wrap2, Smile, Smile2, Web2} from "./style"
+import { Button0} from "./style"
+import photo from './assets/Logo.jpg'
 import img001 from './assets/Logo.jpg'
 import img02 from './assets/Photo.jpg'
 import img03 from './assets/Group1.jpg'
@@ -26,55 +26,50 @@ const Container1 = () => {
   return (
 
     <Container>
-      <container1>
+      <Container01>
 
 
         <Navbar>
 
-            <navbar1>
-              <Photo src={img01}/>
-              {/* <Photo src='./assets/Logo.jpg'/> */}
-            <navbarh1>Credischool</navbarh1>
-            </navbar1>
-
-                  <navbar2>
-                    <homee>Home</homee>
-                    
-                    <homee2>Campus</homee2>
-                    <homee2>Education</homee2>
-                    <homee2>Alumni</homee2>
-                    <homee2>About</homee2>      
-                    </navbar2>
-
-                <navbar3>
-                    <h401>Login</h401>
+            <Web left>
+              <Photo src={photo}/>
+            <h1>Credischool</h1>
+            </Web>
+                  <Web mid>
+                    <Home hom>Home</Home>
+                    <Home>Campus</Home>
+                    <Home>Education</Home>
+                    <Home>Alumni</Home>
+                    <Home>About</Home>      
+                    </Web>
+                <Web right>
+                    <h4>Login</h4>
                    <Button0 register>Register</Button0>
-                </navbar3>
+                </Web>
             </Navbar>
             
          
-            <web012>
-            <h180px>A virtual university,
-                with real degrees</h180px>
-                <ptag01>Credischool is an accredited virtual university built by top professors from Harvard, Stanford, MIT, and many more. The students at Credischool are welcome to study at their own pace.</ptag01>
+            <Wrap>
+            <h1>A virtual university,
+                with real degrees</h1>
+                <p>Credischool is an accredited virtual university built by top professors from Harvard, Stanford, MIT, and many more. The students at Credischool are welcome to study at their own pace.</p>
             <Button0>Learn more</Button0>
-                </web012>
+            </Wrap>
 
-                 <web013>
-            <smile smile01>
-              <Photo2 src={img03}/>
-              <smile2>
-                <h402>Total stipends given</h402>
-                <h1002>$10.508.305</h1002>
-              </smile2>
-             
-            </smile>
-          
-            </web013>
-              <web2>
+                 <Wrap2>
+            <Smile smile01>
+              <img src={img03} alt=''/>
+              <Smile2>
+                <h4>Total stipends given</h4>
+                <h1>$10.508.305</h1>
+              </Smile2>
+            </Smile>
+            </Wrap2>
+
+              <Web2>
                 <Photo1 src={img02} />
-              </web2>
-              </container1>
+              </Web2>
+              </Container01>
 
               <container2>
                 <web3 secure>
@@ -161,7 +156,7 @@ const Container1 = () => {
             <container6>
               <container601>
                 <credisshool>
-                <Photo0 src={img001}/>
+                <img src={img001} alt=''/>
                 <h1>Credischool</h1>
                 </credisshool>
                 <p>Copyright © 2020 Credischool University. All Right Reserved</p>
